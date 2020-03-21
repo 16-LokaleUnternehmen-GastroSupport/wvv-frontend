@@ -27,7 +27,8 @@
               "src/styles/main.css"
             ],
             "scripts": [
-              "src/scripts/materialize.min.js"
+              "src/scripts/materialize.min.js",
+              "src/scripts/finder_main.js"
             ]
           },
           "configurations": {
