@@ -53,9 +53,9 @@
   .search-input {
     background-color: $broken-white;
     font-weight: 600 !important;
-    font-size: 35px !important;
+    font-size: 25px !important;
     &::placeholder {
-      color: $primary-color;
+      color: $primary-color-light;
     }
   }
 
