@@ -8275,4 +8275,19 @@ body {
   font-size: 25px;
 }
 
+#ty-modal {
+  background-color: #2B6B65;
+}
+#ty-modal h1 {
+  color: #FFF;
+  text-align: center;
+  margin-top: 15px;
+}
+#ty-modal .btn, #ty-modal .btn-large, #ty-modal .btn-small {
+  width: 100%;
+}
+#ty-modal .white {
+  color: #000;
+}
+
 /*# sourceMappingURL=main.css.map */
