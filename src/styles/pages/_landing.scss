@@ -2,10 +2,55 @@
   background-size: cover;
   background-position: center center;
   position: relative;
+  .content {
+    margin-left: 10%;
+    width: 80%;
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .col { height: 100%;}
+  }
+  h1 {
+    position: relative;
+    letter-spacing: 2px;
+    z-index: 5;
+    &:after {
+      z-index: -1;
+      content: "\a";
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      height: 66px;
+      width: 950px;
+      background-image: url("src/assets/shine_landing1.svg");
+    }
+  }
   &.s1 {background-image: url("src/assets/background_landing1.svg");}
   &.s2 {background-image: url("src/assets/background_landing2.svg");}
   &.s3 {background-image: url("src/assets/background_landing3.svg");}
   .scroller {
+    width: 110px;
+    height: 50px;
+    color: $primary-color-dark;
     text-decoration: none;
+    position: absolute;
+    display: block;
+    right: 15px;
+    bottom: 110px;
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    &:after {
+      bottom: 5px;
+      left: 0px;
+      content: "\a";
+      height: 2px;
+      position: absolute;
+      width: 110px;
+      background-color: $primary-color-dark;
+    }
   }
 }
