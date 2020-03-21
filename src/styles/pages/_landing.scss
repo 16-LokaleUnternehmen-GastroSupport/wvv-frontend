@@ -1,0 +1,11 @@
+.section {
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  &.s1 {background-image: url("src/assets/background_landing1.svg");}
+  &.s2 {background-image: url("src/assets/background_landing2.svg");}
+  &.s3 {background-image: url("src/assets/background_landing3.svg");}
+  .scroller {
+    text-decoration: none;
+  }
+}

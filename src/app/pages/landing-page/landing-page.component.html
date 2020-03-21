@@ -1,1 +1,13 @@
-<p>landing-page works!</p>
+<div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
+  <div class="section s1">
+    <a href="#second" class="scroller">scroll</a>
+
+  </div>
+  <div class="section s2">
+    <a href="#third" class="scroller">scroll</a>
+
+  </div>
+  <div class="section s3">
+    <a href="#first" class="scroller">scroll top</a>
+  </div>
+</div>
