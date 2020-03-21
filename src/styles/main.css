@@ -8171,10 +8171,10 @@ p {
 .section .search-input {
   background-color: #EFF9F8;
   font-weight: 600 !important;
-  font-size: 35px !important;
+  font-size: 25px !important;
 }
 .section .search-input::placeholder {
-  color: #36B8AB;
+  color: #82CDC6;
 }
 .section .content {
   margin-left: 10%;
