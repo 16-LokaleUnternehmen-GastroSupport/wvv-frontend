@@ -2,14 +2,27 @@
   background-size: cover;
   background-position: center center;
   position: relative;
+
   .content {
     margin-left: 10%;
     width: 80%;
+    text-align: center;
+
     .row {
-      display: flex;
-      flex-wrap: wrap;
+
+      .col {
+        background-position: center;
+        background-size: contain;
+        &.step1 {background-image: url("src/assets/step1.svg"); height: calc(243/1920*100vw); width: calc(275/1920*100vw); }
+        &.step2 {background-image: url("src/assets/step2.svg");height: calc(243/1920*100vw); width: calc(320/1920*100vw);}
+        &.step3 {background-image: url("src/assets/step3.svg");height: calc(243/1920*100vw); width: calc(320/1920*100vw);}
+        &.arrow1 {background-image: url("src/assets/arrow_placeholder1.svg");height: calc(90/1920*100vw); width: calc(375/1920*100vw);}
+        &.arrow2 {background-image: url("src/assets/arrow_placeholder2.svg");height: calc(90/1920*100vw); width: calc(375/1920*100vw);}
+      }
     }
-    .col { height: 100%;}
+
+
+
   }
   h1 {
     position: relative;

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="275" height="243" viewBox="0 0 275 243">
+  <g id="Gruppe_1" data-name="Gruppe 1" transform="translate(-770 -1924)">
+    <g id="Rechteck_17" data-name="Rechteck 17" transform="translate(770 1924)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="275" height="243" stroke="none"/>
+      <rect x="0.5" y="0.5" width="274" height="242" fill="none"/>
+    </g>
+    <text id="PLACE_HOLDER" data-name="PLACE HOLDER" transform="translate(805 2056)" fill="#707070" font-size="28" font-family="Rockwell" letter-spacing="0.012em"><tspan x="0" y="0">PLACE HOLDER</tspan></text>
+    <line id="Linie_1" data-name="Linie 1" y1="211" x2="243" transform="translate(788.5 1939.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Linie_2" data-name="Linie 2" x2="249" y2="217" transform="translate(782.5 1937.5)" fill="none" stroke="#707070" stroke-width="1"/>
+  </g>
+</svg>
