@@ -24,7 +24,9 @@
     .logo {
       width: 270px;
       height: 75px;
-      background-image: url("src/assets/logo.svg");;
+      background-image: url("src/assets/logo.png");
+      background-size: contain;
+      background-repeat: no-repeat;
     }
   }
 
@@ -91,12 +93,15 @@
       left: 0;
       height: 66px;
       width: 950px;
-      background-image: url("src/assets/shine_landing1.svg");
+      background-image: url("src/assets/shine.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+
     }
   }
-  &.s1 {background-image: url("src/assets/background_landing1.svg");}
-  &.s2 {background-image: url("src/assets/background_landing2.svg");}
-  &.s3 {background-image: url("src/assets/background_landing3.svg");}
+  &.s1 {background-image: url("src/assets/background_landing1.png");}
+  &.s2 {background-image: url("src/assets/background_landing2.png");}
+  &.s3 {background-image: url("src/assets/background_landing3.png");}
   .scroller {
     width: 110px;
     height: 50px;

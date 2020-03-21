@@ -7,6 +7,6 @@ import {HttpClient} from '@angular/common/http';
 export class ApiService {
 
   API_KEY = 'API_KEY';
-  API_URL = 'https://jsonplaceholder.typicode.com/';
+  API_URL = 'https://d8c444e7.ngrok.io/';
   constructor(public httpClient: HttpClient) { }
 }
