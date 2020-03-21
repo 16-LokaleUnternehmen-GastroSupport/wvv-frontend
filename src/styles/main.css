@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url(~fullpage.js/dist/fullpage.min.css);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -8258,6 +8259,20 @@ p {
   position: absolute;
   width: 110px;
   background-color: #2B6B65;
+}
+
+body {
+  background-image: url("src/assets/background_landing2.png");
+  background-size: cover;
+}
+
+.container {
+  margin-top: 25px;
+}
+.container .back-btn {
+  color: #2B6B65;
+  font-weight: bold;
+  font-size: 25px;
 }
 
 /*# sourceMappingURL=main.css.map */
