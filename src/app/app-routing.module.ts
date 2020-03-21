@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {LandingPageComponent} from './pages/landing-page/landing-page.component';
 import {RestTestingComponent} from './pages/rest-testing/rest-testing.component';
+import {RestaurantFinderComponent} from './pages/restaurant-finder/restaurant-finder.component';
 
 const routes: Routes = [
   {path: '', component: LandingPageComponent },
-  {path: 'rest', component: RestTestingComponent }
+  {path: 'rest', component: RestTestingComponent },
+  {path: 'finder', component: RestaurantFinderComponent }
 ];
 
 @NgModule({
@@ -14,4 +16,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [LandingPageComponent, RestTestingComponent]
+export const routingComponents = [LandingPageComponent, RestTestingComponent, RestaurantFinderComponent]
