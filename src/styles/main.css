@@ -8140,8 +8140,30 @@ p {
   background-position: center center;
   position: relative;
 }
+.section.s1 .logo-container {
+  position: absolute;
+  top: 100px;
+  width: 80%;
+  margin-left: 10%;
+}
+.section.s1 .logo {
+  width: 270px;
+  height: 75px;
+  background-image: url("src/assets/logo.svg");
+}
 .section.s3 p {
   margin-bottom: 100px;
+}
+.section.s3 .footer {
+  position: absolute;
+  bottom: 75px;
+  width: 94%;
+  left: 3%;
+}
+.section.s3 .footer a {
+  text-decoration: none;
+  color: #2B6B65;
+  margin-right: 50px;
 }
 .section .search-input {
   background-color: #EFF9F8;

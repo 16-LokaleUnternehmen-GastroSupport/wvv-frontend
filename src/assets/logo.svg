@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="270" height="86" viewBox="0 0 270 86">
+  <g id="Gruppe_6" data-name="Gruppe 6" transform="translate(-615 -373)">
+    <g id="Rechteck_1" data-name="Rechteck 1" transform="translate(615 378)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="270" height="75" stroke="none"/>
+      <rect x="0.5" y="0.5" width="269" height="74" fill="none"/>
+    </g>
+    <text id="LOGO" transform="translate(635 442)" fill="#707070" font-size="73" font-family="Rockwell-Bold, Rockwell" font-weight="700" letter-spacing="0.012em"><tspan x="0" y="0">LOGO</tspan></text>
+  </g>
+</svg>

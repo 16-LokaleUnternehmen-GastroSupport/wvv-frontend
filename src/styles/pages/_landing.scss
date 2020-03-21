@@ -14,11 +14,39 @@
   background-position: center center;
   position: relative;
 
+  &.s1 {
+    .logo-container {
+      position: absolute;
+      top: 100px;
+      width: 80%;
+    margin-left: 10%;
+    }
+    .logo {
+      width: 270px;
+      height: 75px;
+      background-image: url("src/assets/logo.svg");;
+    }
+  }
+
   &.s3 {
     p {
       margin-bottom: 100px;
     }
+
+    .footer {
+      position: absolute;
+      bottom: 75px;
+      width: 94% ;
+      left: 3%;
+      a {
+        text-decoration: none;
+        color: $primary-color-dark;
+        margin-right: 50px;
+      }
+    }
   }
+
+
 
   .search-input {
     background-color: $broken-white;
