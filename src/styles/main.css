@@ -8106,7 +8106,7 @@ h1 {
 
 h2 {
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 73px;
 }
 
 h3 {
@@ -8117,6 +8117,10 @@ h3 {
 p {
   font-weight: 400;
   font-size: 17px;
+}
+
+.no-margin-bot {
+  margin-bottom: 0;
 }
 
 .section {
