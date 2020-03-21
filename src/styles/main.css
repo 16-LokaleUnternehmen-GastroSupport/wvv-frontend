@@ -8123,10 +8123,33 @@ p {
   margin-bottom: 0;
 }
 
+.input-group {
+  display: table;
+}
+
+.input-group input, .suffix {
+  display: table-cell;
+}
+
+.suffix {
+  width: 1%;
+}
+
 .section {
   background-size: cover;
   background-position: center center;
   position: relative;
+}
+.section.s3 p {
+  margin-bottom: 100px;
+}
+.section .search-input {
+  background-color: #EFF9F8;
+  font-weight: 600 !important;
+  font-size: 35px !important;
+}
+.section .search-input::placeholder {
+  color: #36B8AB;
 }
 .section .content {
   margin-left: 10%;
