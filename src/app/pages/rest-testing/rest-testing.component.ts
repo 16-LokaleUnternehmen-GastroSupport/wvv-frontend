@@ -30,7 +30,7 @@ export class RestTestingComponent implements OnInit {
 
   ngOnInit() {
     console.log('ngOninit_rest');
-    if (!(localStorage.getItem('currentUser'))) {
+    if (!localStorage.getItem('currentUser')) {
     this.authService.login(environment.basicUser, environment.basicPassword).pipe(first())
       .subscribe(
         data => {

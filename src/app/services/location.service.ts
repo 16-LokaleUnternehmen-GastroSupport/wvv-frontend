@@ -10,6 +10,6 @@ export class LocationService {
   }
 
     public getLocationsByZip(zip: string) {
-      return this.httpClient.get(`${environment.apiUrl}location/${zip}`);
+      return this.httpClient.get(`${environment.apiUrl}/location/${zip}`);
     }
 }

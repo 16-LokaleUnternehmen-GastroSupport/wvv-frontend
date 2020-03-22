@@ -11,8 +11,8 @@ import {map} from 'rxjs/operators';
 })
 export class AuthService {
 
-  private _registerUrl = `${environment.apiUrl}account/register`;
-  private _loginUrl = `${environment.apiUrl}account/login`;
+  private _registerUrl = `${environment.apiUrl}/account/register`;
+  private _loginUrl = `${environment.apiUrl}/account/login`;
 
   private currentUserSubject: BehaviorSubject<User>;
   public currentUser: Observable<User>;
@@ -29,9 +29,10 @@ export class AuthService {
   login(username: string, password: string) {
 
     return this.http.post<any>(this._loginUrl, {username, password})
-      .pipe(map(user => {
+      .pipe(map(() => {
         // store user details and basic auth credentials in local storage to keep user logged in between page refreshes
-        user.authdata = window.btoa(username + ':' + password);
+        let user = new User();
+        user.authdata = window.btoa(username + ':' + password)
         localStorage.setItem('currentUser', JSON.stringify(user));
         this.currentUserSubject.next(user);
         return user;
