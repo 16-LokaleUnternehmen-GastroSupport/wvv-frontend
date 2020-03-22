@@ -8199,15 +8199,15 @@ p {
 }
 .section .content .row .col.arrow1 {
   background-image: url("src/assets/pfeil1.png");
-  background-repeat: no-repeat;
   height: calc(90/1920*100vw);
   width: calc(375/1920*100vw);
+  background-repeat: no-repeat;
 }
 .section .content .row .col.arrow2 {
   background-image: url("src/assets/pfeil2.png");
-  background-repeat: no-repeat;
   height: calc(90/1920*100vw);
   width: calc(375/1920*100vw);
+  background-repeat: no-repeat;
 }
 .section h1 {
   position: relative;

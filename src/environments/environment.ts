@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'https://265301a8.ngrok.io',
+  apiUrl: 'http://itsonbackend-env.eba-gh92pdwm.eu-central-1.elasticbeanstalk.com',
   basicUser: 'felixadmin',
   basicPassword: 'felixadmin'
 };
