@@ -8186,17 +8186,14 @@ p {
   background-size: contain;
 }
 .section .content .row .col.step1 {
-  background-image: url("src/assets/step1.svg");
   height: calc(243/1920*100vw);
   width: calc(275/1920*100vw);
 }
 .section .content .row .col.step2 {
-  background-image: url("src/assets/step2.svg");
   height: calc(243/1920*100vw);
   width: calc(320/1920*100vw);
 }
 .section .content .row .col.step3 {
-  background-image: url("src/assets/step3.svg");
   height: calc(243/1920*100vw);
   width: calc(320/1920*100vw);
 }

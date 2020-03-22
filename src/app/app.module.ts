@@ -8,6 +8,8 @@ import { AngularFullpageModule } from '@fullpage/angular-fullpage';
 import {AuthService} from './services/auth.service';
 import {BasicAuthInterceptor} from './services/basic-auth.interceptor';
 
+import { InlineSVGModule } from 'ng-inline-svg';
+
 @NgModule({
   declarations: [
     routingComponents,
@@ -17,7 +19,8 @@ import {BasicAuthInterceptor} from './services/basic-auth.interceptor';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    AngularFullpageModule
+    AngularFullpageModule,
+    InlineSVGModule
   ],
   providers: [
     AuthService,
