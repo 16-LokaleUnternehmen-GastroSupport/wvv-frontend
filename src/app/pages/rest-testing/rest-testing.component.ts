@@ -21,12 +21,8 @@ export class RestTestingComponent implements OnInit {
     this.locationService.getLocationsByZip(zip).subscribe(res => {
       this.locations = res;
     });
-    console.log(this.locations);
   }
 
-  loginNow() {
-    this.authService.login(environment.basicUser, environment.basicPassword);
-  }
 
   ngOnInit() {
     console.log('ngOninit_rest');

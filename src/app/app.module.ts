@@ -29,4 +29,7 @@ import {BasicAuthInterceptor} from './services/basic-auth.interceptor';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+
+export class AppModule {
+  zip: string;
+}
