@@ -4,19 +4,21 @@ import {first} from 'rxjs/operators';
 import {LocationService} from '../../services/location.service';
 import {AuthService} from '../../services/auth.service';
 import {Router} from '@angular/router';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-restaurant-finder',
   templateUrl: './restaurant-finder.component.html'
 })
 export class RestaurantFinderComponent implements OnInit {
-
+  currentzip: string;
   locations;
   private returnUrl: string;
 
   constructor(private locationService: LocationService,
               private authService: AuthService,
-              private router: Router) { }
+              private router: Router,
+              private route: ActivatedRoute) { }
 
   getLocations(zip) {
     this.locationService.getLocationsByZip(zip).subscribe(res => {
@@ -35,8 +37,8 @@ export class RestaurantFinderComponent implements OnInit {
             console.log('Error:' + error);
           });
     }
-
-    this.getLocations('57072');
+    this.currentzip = this.route.snapshot.queryParamMap.get('zip');
+    this.getLocations(this.currentzip);
   }
 
 }

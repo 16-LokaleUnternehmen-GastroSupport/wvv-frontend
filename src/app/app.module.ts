@@ -33,6 +33,4 @@ import { InlineSVGModule } from 'ng-inline-svg';
   bootstrap: [AppComponent]
 })
 
-export class AppModule {
-  zip: string;
-}
+export class AppModule {}
