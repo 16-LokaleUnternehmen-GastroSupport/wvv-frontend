@@ -4,6 +4,7 @@ import {AuthService} from '../../services/auth.service';
 import {environment} from '../../../environments/environment';
 import {first} from 'rxjs/operators';
 import {Router} from '@angular/router';
+import {DishService} from '../../services/dish.service';
 
 @Component({
   selector: 'app-rest-testing',
@@ -11,9 +12,11 @@ import {Router} from '@angular/router';
 })
 export class RestTestingComponent implements OnInit {
   locations;
+  dishes;
   private returnUrl: string;
 
   constructor(private locationService: LocationService,
+              private dishService: DishService,
               private authService: AuthService,
               private router: Router) { }
 
@@ -23,9 +26,14 @@ export class RestTestingComponent implements OnInit {
     });
   }
 
+  getDishes(locationId) {
+    this.dishService.getDishesByLocationId(locationId).subscribe(res => {
+      this.dishes = res;
+    });
+  }
+
 
   ngOnInit() {
-    console.log('ngOninit_rest');
     if (!localStorage.getItem('currentUser')) {
     this.authService.login(environment.basicUser, environment.basicPassword).pipe(first())
       .subscribe(
