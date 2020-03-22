@@ -18,6 +18,9 @@ export class LandingPageComponent implements OnInit {
       licenseKey: 'YOUR LICENSE KEY HERE',
       anchors: ['first', 'second', 'third'],
       menu: '#menu',
+      scrollOverflowReset: true,
+      responsiveWidth: 900,
+      responsiveHeight: 900,
 
       // fullpage callbacks
       afterResize: () => {
