@@ -27,6 +27,7 @@ export class AuthService {
   }
 
   login(username: string, password: string) {
+
     return this.http.post<any>(this._loginUrl, {username, password})
       .pipe(map(user => {
         // store user details and basic auth credentials in local storage to keep user logged in between page refreshes
@@ -34,8 +35,9 @@ export class AuthService {
         localStorage.setItem('currentUser', JSON.stringify(user));
         this.currentUserSubject.next(user);
         return user;
-        console.log('logged in!');
       }));
+
+
   }
 
   logout() {
