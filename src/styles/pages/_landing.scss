@@ -127,3 +127,20 @@
     }
   }
 }
+
+
+/*Responsive Design Stuff */
+$break-small: 480px;
+
+.section {
+  @media screen and (max-width: $break-small) {
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 35px;
+    }
+  }
+}
+
+
