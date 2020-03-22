@@ -5,8 +5,8 @@
 export const environment = {
   production: false,
   apiUrl: 'http://itsonbackend-env.eba-gh92pdwm.eu-central-1.elasticbeanstalk.com',
-  basicUser: 'felixadmin',
-  basicPassword: 'felixadmin'
+  basicUser: 'test',
+  basicPassword: 'test'
 };
 
 /*
