@@ -70,11 +70,11 @@
       .col {
         background-position: center;
         background-size: contain;
-        &.step1 {background-image: url("src/assets/step1.svg"); height: calc(243/1920*100vw); width: calc(275/1920*100vw); }
-        &.step2 {background-image: url("src/assets/step2.svg");height: calc(243/1920*100vw); width: calc(320/1920*100vw);}
-        &.step3 {background-image: url("src/assets/step3.svg");height: calc(243/1920*100vw); width: calc(320/1920*100vw);}
-        &.arrow1 {background-image: url("src/assets/arrow_placeholder1.svg");height: calc(90/1920*100vw); width: calc(375/1920*100vw);}
-        &.arrow2 {background-image: url("src/assets/arrow_placeholder2.svg");height: calc(90/1920*100vw); width: calc(375/1920*100vw);}
+        &.step1 {height: calc(243/1920*100vw); width: calc(275/1920*100vw); }
+        &.step2 {height: calc(243/1920*100vw); width: calc(320/1920*100vw);}
+        &.step3 {height: calc(243/1920*100vw); width: calc(320/1920*100vw);}
+        &.arrow1 {background-image: url("src/assets/pfeil1.png");height: calc(90/1920*100vw); width: calc(375/1920*100vw);background-repeat: no-repeat;}
+        &.arrow2 {background-image: url("src/assets/pfeil2.png");height: calc(90/1920*100vw); width: calc(375/1920*100vw);background-repeat: no-repeat;}
       }
     }
 

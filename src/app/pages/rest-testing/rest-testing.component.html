@@ -1,4 +1,21 @@
 <p>rest-testing works!</p>
-<div *ngFor="let user of users">
-  <p>{{user['name']}}</p>
-</div>
+
+<table style="width:100%">
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Address</th>
+    <th>ZIP</th>
+    <th>Town</th>
+  </tr>
+  <tr *ngFor="let location of locations">
+    <th>{{location['id']}}</th>
+    <th>{{location['name']}}</th>
+    <th>{{location['address']['street']}} {{location['address']['streetNumber']}}</th>
+    <th>{{location['address']['zip']}}</th>
+    <th></th>
+  </tr>
+</table>
+
+  <input type="text">
+  <button (click)="getLocations('57072')">awddw</button>

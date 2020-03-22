@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 export class LandingPageComponent implements OnInit {
   config: any;
   fullpage_api: any;
+  zipcode: string;
 
   constructor() {
 
@@ -30,6 +31,10 @@ export class LandingPageComponent implements OnInit {
 
   getRef(fullPageRef) {
     this.fullpage_api = fullPageRef;
+  }
+
+  onKey(event: KeyboardEvent) { // with type info
+    this.zipcode = (event.target as HTMLInputElement).value;
   }
 
   ngOnInit(): void {

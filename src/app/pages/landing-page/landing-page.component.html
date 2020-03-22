@@ -22,9 +22,15 @@
       </div>
       <div class="row">
         <div class="col l2"><p>Kauf einen Drink für dich oder lad doch direkt einen Freund ein - wenn das Chaos vorbei ist habt ihr genug zu bequatschen!</p></div>
-        <div class="col l2 step1"></div>
-        <div class="col l3 step2 offset-l1"></div>
-        <div class="col l3 step3 offset-l1"></div>
+        <div class="col l2 step1">
+          <div [inlineSVG]="'/assets/step1.svg'"></div>
+        </div>
+        <div class="col l3 step2 offset-l1">
+          <div [inlineSVG]="'/assets/step2.svg'"></div>
+        </div>
+        <div class="col l3 step3 offset-l1">
+          <div [inlineSVG]="'/assets/step3.svg'"></div>
+        </div>
       </div>
       <div class="row">
         <div class="col l3 offset-l7 arrow2"></div>
@@ -44,9 +50,9 @@
       <div class="row"><p class="col l6 s12">Finde dein Lieblingslokal, such dir dein Lieblingsgetränk oder Gericht aus und freu dich schon darauf demnächst wieder dort sein zu können! Denn Vorfreude ist die schönste Freude.</p></div>
       <div class="row">
         <div class="col l8">
-          <input type="text" class="search-input col l6" placeholder="zB 50678 Köln">
+          <input (keyup)="onKey($event)" type="text" class="search-input col l6" placeholder="zB 50678">
           <div class="col l6">
-            <button class="waves-effect waves-light btn-large" type="button">Lieblingslokal finden</button>
+            <a routerLink="/finder" [queryParams]="{zip:this.zipcode}" class="waves-effect waves-light btn-large btn" type="button">Lieblingslokal finden</a>
           </div>
         </div>
       </div>

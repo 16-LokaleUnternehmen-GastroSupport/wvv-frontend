@@ -6,7 +6,9 @@ import {AppRoutingModule, routingComponents} from './app-routing.module';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import { AngularFullpageModule } from '@fullpage/angular-fullpage';
 import {AuthService} from './services/auth.service';
-import {AuthInterceptor} from './services/auth.interceptor';
+import {BasicAuthInterceptor} from './services/basic-auth.interceptor';
+
+import { InlineSVGModule } from 'ng-inline-svg';
 
 @NgModule({
   declarations: [
@@ -17,16 +19,18 @@ import {AuthInterceptor} from './services/auth.interceptor';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    AngularFullpageModule
+    AngularFullpageModule,
+    InlineSVGModule
   ],
   providers: [
     AuthService,
     {
       provide: HTTP_INTERCEPTORS,
-      useClass: AuthInterceptor,
+      useClass: BasicAuthInterceptor,
       multi: true
     }
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+
+export class AppModule {}

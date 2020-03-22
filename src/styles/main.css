@@ -8186,29 +8186,28 @@ p {
   background-size: contain;
 }
 .section .content .row .col.step1 {
-  background-image: url("src/assets/step1.svg");
   height: calc(243/1920*100vw);
   width: calc(275/1920*100vw);
 }
 .section .content .row .col.step2 {
-  background-image: url("src/assets/step2.svg");
   height: calc(243/1920*100vw);
   width: calc(320/1920*100vw);
 }
 .section .content .row .col.step3 {
-  background-image: url("src/assets/step3.svg");
   height: calc(243/1920*100vw);
   width: calc(320/1920*100vw);
 }
 .section .content .row .col.arrow1 {
-  background-image: url("src/assets/arrow_placeholder1.svg");
+  background-image: url("src/assets/pfeil1.png");
   height: calc(90/1920*100vw);
   width: calc(375/1920*100vw);
+  background-repeat: no-repeat;
 }
 .section .content .row .col.arrow2 {
-  background-image: url("src/assets/arrow_placeholder2.svg");
+  background-image: url("src/assets/pfeil2.png");
   height: calc(90/1920*100vw);
   width: calc(375/1920*100vw);
+  background-repeat: no-repeat;
 }
 .section h1 {
   position: relative;
@@ -8278,6 +8277,12 @@ body {
 #ty-modal {
   background-color: #2B6B65;
 }
+#ty-modal img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
 #ty-modal h1 {
   color: #FFF;
   text-align: center;
@@ -8288,6 +8293,26 @@ body {
 }
 #ty-modal .white {
   color: #000;
+}
+#ty-modal .row {
+  margin-top: 25px;
+}
+
+#dish-modal h3.heading {
+  text-align: center;
+}
+#dish-modal a.buy-btn {
+  width: 100%;
+}
+#dish-modal p.split {
+  text-align: center;
+}
+
+#buy-modal p {
+  color: #000;
+}
+#buy-modal .buy-forms {
+  margin-top: 25px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,55 +1,19 @@
 
 <div class="container">
 
-  <a class="back-btn" [routerLink]="['/landing']">< Zurück</a>
+  <a class="back-btn" href="/">< Zurück</a>
 
-<h3>Wir haben folgende Restaurants in <span>placeholder</span> gefunden.</h3>
+<h3>Wir haben folgende Restaurants in <b>57072</b> gefunden.</h3>
   <div class="row">
-    <div class="col s12 m6 l3">
+    <div class="col s12 m6 l3"  *ngFor="let location of locations">
       <div class="card">
         <div class="card-image">
           <img src="assets/sample-1.jpg">
-          <span class="card-title">Card Title</span>
-          <a class="btn-floating btn-large halfway-fab waves-effect waves-light teal accent-4 pulse modal-trigger" href="#dish-modal"><i class="material-icons">add</i></a>
+          <span class="card-title">{{location['name']}}</span>
+          <button data-target="dish-modal" class="btn-floating btn-large halfway-fab waves-effect waves-light teal accent-4 pulse modal-trigger"><i class="material-icons">add</i></button>
         </div>
         <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l3">
-      <div class="card">
-        <div class="card-image">
-          <img src="assets/sample-1.jpg">
-          <span class="card-title">Card Title</span>
-          <a class="btn-floating btn-large halfway-fab waves-effect waves-light teal accent-4 pulse"><i class="material-icons">add</i></a>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l3">
-      <div class="card">
-        <div class="card-image">
-          <img src="assets/sample-1.jpg">
-          <span class="card-title">Card Title</span>
-          <a class="btn-floating btn-large halfway-fab waves-effect waves-light teal accent-4 pulse"><i class="material-icons">add</i></a>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l3">
-      <div class="card">
-        <div class="card-image">
-          <img src="assets/sample-1.jpg">
-          <span class="card-title">Card Title</span>
-          <a class="btn-floating btn-large halfway-fab waves-effect waves-light teal accent-4 pulse"><i class="material-icons">add</i></a>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+          <p>{{location['address']['street']}} {{location['address']['streetNumber']}}<br>{{location['address']['zip']}} {{location['address']['town']}}</p>
         </div>
       </div>
     </div>
@@ -72,20 +36,58 @@
   <div class="modal-content">
     <h3>Auf was möchtest du <span>Restaurantname</span> einladen.</h3>
     <div class="row">
-      <div class="col s12 m6 l3"><p>s12 m6 l3</p></div>
-      <div class="col s12 m6 l3"><p>s12 m6 l3</p></div>
-      <div class="col s12 m6 l3"><p>s12 m6 l3</p></div>
+      <div class="col s12 m6 l4">
+        <div class="card">
+          <div class="container">
+            <div class="card-image">
+              <img src="assets/bier.png">
+            </div>
+            <h3>Bier</h3>
+            <p>Ein frisch gezapftes Bier.</p>
+            <a href="#" class="btn btn-large buy-btn teal accent-4">5,00 €</a>
+            <p class="split">Auteilung</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="card">
+          <div class="container">
+            <div class="card-image">
+              <img src="assets/bier.png">
+            </div>
+            <h3>Bier</h3>
+            <p>Lorem ipsum dolor sit amet consecteur dolom ipsum.</p>
+            <a href="#" class="btn btn-large buy-btn teal accent-4">5,00 €</a>
+            <p class="split">Auteilung</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="card">
+          <div class="container">
+            <div class="card-image">
+              <img src="assets/bier.png">
+            </div>
+            <h3>Bier</h3>
+            <p>Lorem ipsum dolor sit amet consecteur dolom ipsum.</p>
+            <a href="#" class="btn btn-large buy-btn teal accent-4">5,00 €</a>
+            <p class="split">Auteilung</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   </div>
 
-<a class="btn-large teal accent-4 modal-trigger" href="#ty-modal">Danke-Modal Trigger</a>
+<!--<a class="btn-large teal accent-4 modal-trigger" href="#ty-modal">Danke-Modal Trigger</a>-->
+<!--<a class="btn-large teal accent-4 modal-trigger" href="#buy-modal">Kaufen-Modal Trigger</a>-->
+
 
 <!-- Thank You Modal -->
 <div id="ty-modal" class="modal">
   <div class="modal-content">
     <h1>Danke</h1>
-    <div class="glass"></div>
+    <img src="assets/thankyou_drinks.png">
     <div class="row">
       <div class="col s6">
         <a class="btn-large white">Teilen</a>
@@ -94,5 +96,41 @@
         <a class="btn-large teal accent-4">Mehr Spenden</a>
       </div>
     </div>
+  </div>
+</div>
+
+<!-- Buy Form Modal -->
+<div id="buy-modal" class="modal">
+  <div class="modal-content">
+<div class="container">
+  <a href="#!" class="modal-close back-btn">< Zurück</a>
+    <div class="row buy-forms">
+      <div class="col s12 m6 l6">
+        <h4>Ich will einen Gutschein...</h4>
+        <p>Du kannst auch alles spenden, dann lass die Felder einfach frei.</p>
+        <div class="input-field col s12">
+          <input id="name" type="text" class="validate">
+          <label for="name">Dein Name</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="mail" type="email" class="validate">
+          <label for="mail">Deine E-Mail</label>
+        </div>
+      </div>
+      <div class="col s12 m6 l6">
+        <h4>... verschenken.</h4>
+        <p>Gar nicht für dich? Kein Problem. An wen dürfen wir den Gutschein senden?</p>
+        <div class="input-field col s12">
+          <input id="friend_name" type="text" class="validate">
+          <label for="friend_name">Name des Beschenkten</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="friend_mail" type="email" class="validate">
+          <label for="friend_mail">E-Mail des Beschenkten</label>
+        </div>
+      </div>
+    </div>
+  <a href="#" class="btn btn-large teal">Mit PayPal fortfahren</a>
+</div>
   </div>
 </div>

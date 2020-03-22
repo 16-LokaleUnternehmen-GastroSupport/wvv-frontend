@@ -5,11 +5,11 @@ import {HttpClient} from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class LocationService {
+export class DishService {
   constructor(private httpClient: HttpClient) {
   }
 
-    public getLocationsByZip(zip: string) {
-      return this.httpClient.get(`${environment.apiUrl}/location/${zip}`);
+    public getDishesByLocationId(locationId: string) {
+      return this.httpClient.get(`${environment.apiUrl}/dish?locationId=${locationId}`);
     }
 }
