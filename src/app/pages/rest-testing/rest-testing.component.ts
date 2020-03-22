@@ -18,7 +18,10 @@ export class RestTestingComponent implements OnInit {
               private router: Router) { }
 
   getLocations(zip) {
-    console.log(this.locationService.getLocationsByZip(zip));
+    this.locationService.getLocationsByZip(zip).subscribe(res => {
+      this.locations = res;
+    });
+    console.log(this.locations);
   }
 
   loginNow() {
