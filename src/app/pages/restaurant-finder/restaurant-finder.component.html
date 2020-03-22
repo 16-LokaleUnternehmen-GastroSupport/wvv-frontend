@@ -10,7 +10,7 @@
         <div class="card-image">
           <img src="assets/sample-1.jpg">
           <span class="card-title">{{location['name']}}</span>
-          <a class="btn-floating btn-large halfway-fab waves-effect waves-light teal accent-4 pulse modal-trigger" href="#dish-modal"><i class="material-icons">add</i></a>
+          <button data-target="dish-modal" class="btn-floating btn-large halfway-fab waves-effect waves-light teal accent-4 pulse modal-trigger"><i class="material-icons">add</i></button>
         </div>
         <div class="card-content">
           <p>{{location['address']['street']}} {{location['address']['streetNumber']}}<br>{{location['address']['zip']}} {{location['address']['town']}}</p>
