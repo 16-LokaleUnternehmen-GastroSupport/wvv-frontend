@@ -14,6 +14,10 @@
   background-position: center center;
   position: relative;
 
+  .mobile-view {
+    visibility: hidden;
+  }
+
   &.s1 {
     .logo-container {
       position: absolute;
@@ -130,7 +134,7 @@
 
 
 /*Responsive Design Stuff */
-$break-small: 480px;
+$break-small: 560px;
 
 .section {
   @media screen and (max-width: $break-small) {
@@ -140,6 +144,22 @@ $break-small: 480px;
     h2 {
       font-size: 35px;
     }
+    .desktop-view {
+      display:none;
+    }
+    .mobile-view {
+      visibility: visible;
+      .fp-tableCell {
+        height: 550px !important;
+      }
+      .fp-controlArrow.fp-prev {
+        border-color: transparent #2B6B65 transparent transparent !important;
+      }
+      .fp-controlArrow.fp-next {
+        border-color: transparent transparent transparent #2B6B65 !important;
+      }
+    }
+
   }
 }
 
