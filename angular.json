@@ -21,7 +21,8 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/appspec.yml"
             ],
             "styles": [
               "src/styles/main.css"
