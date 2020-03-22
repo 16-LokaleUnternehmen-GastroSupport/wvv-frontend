@@ -8278,6 +8278,12 @@ body {
 #ty-modal {
   background-color: #2B6B65;
 }
+#ty-modal img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
 #ty-modal h1 {
   color: #FFF;
   text-align: center;
@@ -8289,6 +8295,9 @@ body {
 #ty-modal .white {
   color: #000;
 }
+#ty-modal .row {
+  margin-top: 25px;
+}
 
 #dish-modal h3.heading {
   text-align: center;
@@ -8298,6 +8307,13 @@ body {
 }
 #dish-modal p.split {
   text-align: center;
+}
+
+#buy-modal p {
+  color: #000;
+}
+#buy-modal .buy-forms {
+  margin-top: 25px;
 }
 
 /*# sourceMappingURL=main.css.map */
