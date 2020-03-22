@@ -44,9 +44,9 @@
       <div class="row"><p class="col l6 s12">Finde dein Lieblingslokal, such dir dein Lieblingsgetränk oder Gericht aus und freu dich schon darauf demnächst wieder dort sein zu können! Denn Vorfreude ist die schönste Freude.</p></div>
       <div class="row">
         <div class="col l8">
-          <input type="text" class="search-input col l6" placeholder="zB 50678 Köln">
+          <input (keyup)="onKey($event)" type="text" class="search-input col l6" placeholder="zB 50678">
           <div class="col l6">
-            <a href="/finder" class="waves-effect waves-light btn-large" type="button">Lieblingslokal finden</a>
+            <a href="/finder" class="waves-effect waves-light btn-large btn" type="button">Lieblingslokal finden</a>
           </div>
         </div>
       </div>
