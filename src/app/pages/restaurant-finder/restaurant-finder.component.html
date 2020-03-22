@@ -110,12 +110,14 @@
   </div>
 
 <a class="btn-large teal accent-4 modal-trigger" href="#ty-modal">Danke-Modal Trigger</a>
+<a class="btn-large teal accent-4 modal-trigger" href="#buy-modal">Kaufen-Modal Trigger</a>
+
 
 <!-- Thank You Modal -->
 <div id="ty-modal" class="modal">
   <div class="modal-content">
     <h1>Danke</h1>
-    <div class="glass"></div>
+    <img src="assets/thankyou_drinks.png">
     <div class="row">
       <div class="col s6">
         <a class="btn-large white">Teilen</a>
@@ -124,5 +126,40 @@
         <a class="btn-large teal accent-4">Mehr Spenden</a>
       </div>
     </div>
+  </div>
+</div>
+
+<!-- Buy Form Modal -->
+<div id="buy-modal" class="modal">
+  <div class="modal-content">
+<div class="container">
+  <a href="#!" class="modal-close back-btn">< Zurück</a>
+    <div class="row buy-forms">
+      <div class="col s12 m6 l6">
+        <h4>Ich will einen Gutschein...</h4>
+        <p>Du kannst auch alles spenden, dann lass die Felder einfach frei.</p>
+        <div class="input-field col s12">
+          <input id="name" type="text" class="validate">
+          <label for="name">Dein Name</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="mail" type="email" class="validate">
+          <label for="mail">Deine E-Mail</label>
+        </div>
+      </div>
+      <div class="col s12 m6 l6">
+        <h4>... verschenken.</h4>
+        <p>Gar nicht für dich? Kein Problem. An wen dürfen wir den Gutschein senden?</p>
+        <div class="input-field col s12">
+          <input id="friend_name" type="text" class="validate">
+          <label for="friend_name">Name des Beschenkten</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="friend_mail" type="email" class="validate">
+          <label for="friend_mail">E-Mail des Beschenkten</label>
+        </div>
+      </div>
+    </div>
+</div>
   </div>
 </div>
