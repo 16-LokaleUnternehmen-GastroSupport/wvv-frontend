@@ -8290,4 +8290,14 @@ body {
   color: #000;
 }
 
+#dish-modal h3.heading {
+  text-align: center;
+}
+#dish-modal a.buy-btn {
+  width: 100%;
+}
+#dish-modal p.split {
+  text-align: center;
+}
+
 /*# sourceMappingURL=main.css.map */
