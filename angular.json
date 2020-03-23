@@ -24,11 +24,12 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/materialize-css/dist/css/materialize.min.css",
               "src/styles/main.css"
             ],
             "scripts": [
-              "src/scripts/materialize.min.js",
-              "src/scripts/finder_main.js"
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/materialize-css/dist/js/materialize.min.js"
             ]
           },
           "configurations": {
